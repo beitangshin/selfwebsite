@@ -1,0 +1,74 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 709 >>
+stream
+BT
+/F1 12 Tf
+72 740 Td
+(David Lianqiao Xiao) Tj
+0 -20 Td
+(Senior C++ Engineer | Autonomous Systems | Applied AI) Tj
+0 -32 Td
+(Dear Hiring Team,) Tj
+0 -28 Td
+(I am writing to express my interest in senior software engineering roles focused on autonomous systems,) Tj
+0 -16 Td
+(applied AI, and intelligent vehicle development. My background combines more than six years of) Tj
+0 -16 Td
+(autonomous vehicle R&D with strong experience in C++, Python, V2X-related development, test) Tj
+0 -16 Td
+(infrastructure, simulation, HIL validation, and on-vehicle verification.) Tj
+0 -28 Td
+(At Scania and Traton, I have worked across mission handling, situational awareness, communication) Tj
+0 -16 Td
+(modules, sensor-adjacent workflows, and engineering automation. I am comfortable taking work from) Tj
+0 -16 Td
+(implementation through unit testing, simulator environments, embedded integration, and field) Tj
+0 -16 Td
+(validation. I also bring practical AI experience through Databricks-based vehicle-log analysis and) Tj
+0 -16 Td
+(a published master's thesis on vehicle trajectory prediction using Kalman filtering, LSTM sequence) Tj
+0 -16 Td
+(models, and attention-enabled encoder-decoder architectures.) Tj
+0 -28 Td
+(What I offer is a combination of systems thinking, hands-on delivery, and validation discipline.) Tj
+0 -16 Td
+(I work well in technically demanding environments where software quality, engineering judgment,) Tj
+0 -16 Td
+(and applied intelligence all matter. I am especially motivated by roles where modern AI tooling) Tj
+0 -16 Td
+(and intelligent-system development can create practical value for products and teams.) Tj
+0 -28 Td
+(Thank you for your time and consideration. I would be glad to discuss how I can contribute.) Tj
+0 -40 Td
+(Sincerely,) Tj
+0 -20 Td
+(David Lianqiao Xiao) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1071
+%%EOF
