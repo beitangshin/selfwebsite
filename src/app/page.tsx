@@ -6,9 +6,9 @@ import { skillGroups } from "@/data/skills";
 
 export default function Home() {
   const stats = [
+    { label: "Experience", value: "8+ years" },
     { label: "Core Stack", value: "C++ + Python" },
-    { label: "Domain", value: "Autonomous Vehicles" },
-    { label: "AI Angle", value: "Attention + LLM Concepts" },
+    { label: "Delivery", value: "Code to vehicle" },
   ];
 
   return (
@@ -118,7 +118,7 @@ export default function Home() {
       <section id="about" className="mx-auto grid w-full max-w-7xl gap-8 px-6 py-12 lg:grid-cols-[0.7fr_1.3fr] lg:px-10">
         <div className="space-y-4">
           <p className="section-kicker">About</p>
-          <h2 className="section-title">Systems engineering depth with practical AI, attention-based modeling, and autonomous vehicle experience.</h2>
+          <h2 className="section-title">Systems engineering depth, validation discipline, and practical AI tooling.</h2>
         </div>
         <div className="glass-panel rounded-[2rem] p-8">
           <p className="max-w-3xl text-lg leading-8 text-stone-300">{profile.about}</p>
@@ -179,7 +179,7 @@ export default function Home() {
       <section id="projects" className="mx-auto w-full max-w-7xl px-6 py-12 lg:px-10">
         <div className="mb-8 max-w-3xl">
           <p className="section-kicker">Projects</p>
-          <h2 className="section-title">Selected engineering work spanning autonomous systems, applied AI, and published sequence-model research.</h2>
+          <h2 className="section-title">Public projects and confidentiality-safe engineering work spanning autonomous systems, local-first AI, and reliable software delivery.</h2>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-2">
@@ -247,7 +247,7 @@ export default function Home() {
       <section id="skills" className="mx-auto w-full max-w-7xl px-6 py-12 lg:px-10">
         <div className="mb-8 max-w-3xl">
           <p className="section-kicker">Skills</p>
-          <h2 className="section-title">Languages, systems, and AI methods I rely on in production engineering and applied research.</h2>
+          <h2 className="section-title">Languages, systems, and engineering practices I use to build and validate real products.</h2>
         </div>
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">

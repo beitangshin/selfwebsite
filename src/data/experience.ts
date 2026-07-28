@@ -6,26 +6,28 @@ export const experienceItems: ExperienceItem[] = [
     role: "Senior C++ Engineer",
     period: "Nov 2025 - Present",
     summary:
-      "Working on autonomous vehicle communication and sensor-related development with a focus on V2X modules, testing systems, and vehicle-facing tooling.",
+      "Developing autonomous-vehicle communication and sensor-integration workflows, with a focus on V2X modules, validation systems, telemetry analysis, and vehicle-facing engineering tools.",
     achievements: [
-      "Develop V2X communication modules and support sensor-facing workflows across lidar, radar, and camera contexts.",
-      "Built and maintained HIL-oriented testing systems for validating new features in autonomous vehicle stacks.",
-      "Automated tooling and vehicle tests to improve the reliability and speed of V2X development cycles.",
+      "Develop V2X communication modules and support sensor-facing workflows across radar, lidar, and camera contexts.",
+      "Build and maintain HIL-oriented test systems for validating new functionality in autonomous vehicle stacks.",
+      "Develop local analysis and playback tooling that supports debugging, validation, and root-cause analysis without exposing production data.",
+      "Automate vehicle-test and engineering workflows to improve the reliability and speed of feature delivery.",
     ],
-    techStack: ["C++", "Python", "V2X", "HIL Testing", "Sensors", "Docker"],
+    techStack: ["C++", "Python", "V2X", "Sensor Integration", "HIL Testing", "Telemetry"],
   },
   {
     company: "Scania R&D",
     role: "Development Engineer (T2)",
     period: "Sep 2021 - Nov 2025",
     summary:
-      "Developed autonomous truck functionality for mining use cases, covering mission handling, degradation management, situational awareness, and related systems.",
+      "Developed autonomous mining-truck functionality spanning mission handling, degradation management, situational awareness, and the supporting validation workflow.",
     achievements: [
       "Led new feature development in mission handling and situational awareness for autonomous vehicles.",
-      "Worked test-first across unit level, simulation environments, embedded systems, and on-vehicle validation.",
-      "Contributed to Databricks-based AI and big data workflows for extracting and verifying features from vehicle logs.",
+      "Worked across unit tests, simulation, embedded integration, HIL, and on-vehicle validation.",
+      "Supported customer-site joint testing in Australia for integrated autonomous-truck validation.",
+      "Contributed to Databricks-based workflows for extracting and verifying engineering signals from vehicle logs.",
     ],
-    techStack: ["C++", "Python", "Databricks", "Simulation", "Embedded Testing", "Docker"],
+    techStack: ["C++", "Python", "Databricks", "Simulation", "HIL", "Vehicle Validation"],
   },
   {
     company: "Scania R&D",

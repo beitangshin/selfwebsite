@@ -2,6 +2,106 @@ import type { ProjectItem } from "@/types/content";
 
 export const projectItems: ProjectItem[] = [
   {
+    id: "sensor-playback-visualizer",
+    title: "Sensor Playback Visualizer",
+    shortDescription:
+      "A Godot 4 desktop application for local replay, 3D inspection, and debugging of recorded spatial-detection frames.",
+    longDescription:
+      "A portfolio-safe reconstruction of the engineering workflow behind sensor-data review: load an authorized local capture, replay it frame by frame, inspect spatial detections, and correlate frame health through a responsive desktop interface. The repository deliberately excludes captures, vendor SDKs, and company configuration.",
+    role: "Designer and developer",
+    techStack: ["Godot 4", "GDScript", "3D Visualization", "Local Data", "Replay Tooling", "Sensor Debugging"],
+    category: "Engineering Tool",
+    status: "Public GitHub project",
+    repositoryUrl: "https://github.com/beitangshin/generic-sensor-visualizer",
+    featured: true,
+    highlights: [
+      "Designed a local-first workflow for replay, frame stepping, range controls, detection selection, and inspection.",
+      "Separated capture ingestion from the normalized frame contract and visualization layer.",
+      "Published without captures, supplier information, device SDKs, or internal configuration.",
+    ],
+    year: "2026",
+    heroImage: "/projects/sensor-playback-dashboard.png",
+    overview:
+      "The project turns spatial-detection data into an interactive debugging workflow. It is deliberately structured so approved input adapters can change while the UI and inspection flow remain stable.",
+    featureBullets: [
+      "Load approved local captures with progress and error feedback.",
+      "Play, pause, step through frames, and navigate a timeline.",
+      "Inspect detections in an interactive 3D point-cloud view with selectable layers and range controls.",
+      "Use local live-input and recording controls in authorized test environments.",
+    ],
+    architectureBullets: [
+      "Packet readers and decoders isolate format-specific ingestion.",
+      "A normalized frame contract separates data adaptation from presentation.",
+      "The replay pipeline feeds the Godot 3D view, timeline, health indicators, and frame inspector.",
+    ],
+  },
+  {
+    id: "tolk-agent",
+    title: "Tolk Agent",
+    shortDescription:
+      "A local-first document-image translation tool with OCR, page ordering, DeepSeek translation, and structured exports.",
+    longDescription:
+      "Tolk Agent processes one or more local document photos, extracts text through configurable OCR backends, translates it into Simplified Chinese and English, and writes Markdown, JSON, and reader-friendly PDF outputs. Its batch workflow protects page order and continues past individual failures.",
+    role: "Designer and developer",
+    techStack: ["Python", "OCR", "PaddleOCR", "DeepSeek API", "PDF Export", "Pytest"],
+    category: "AI Developer Tool",
+    status: "Public GitHub project",
+    repositoryUrl: "https://github.com/beitangshin/tolk_agent",
+    featured: true,
+    highlights: [
+      "Designed pluggable local OCR, optional vision OCR, translation, and export layers.",
+      "Built page-ordering and duplicate protection for continuing long translation bundles safely.",
+      "Verified the public project with a 36-test suite while keeping input documents and API keys local.",
+    ],
+    year: "2026",
+    overview:
+      "This project applies AI where it is useful but keeps the workflow understandable: choose an OCR backend based on privacy needs, retain structured intermediate output, and produce readable translations locally.",
+    featureBullets: [
+      "Process individual images or batches with per-file error reporting.",
+      "Use Tesseract, PaddleOCR, or an optional OpenAI-compatible vision backend.",
+      "Continue a named project while preserving detected page order and avoiding duplicates.",
+      "Export Markdown, JSON, and separate Chinese and English PDFs.",
+    ],
+    architectureBullets: [
+      "Independent OCR, page-ordering, translation, and exporter modules.",
+      "Configuration through environment variables and ignored local settings.",
+      "Test coverage for core processing and page-order behavior.",
+    ],
+  },
+  {
+    id: "award-search-scheduler",
+    title: "Award Search Scheduler",
+    shortDescription:
+      "A FastAPI and SQLite scheduling foundation for cache-first, provider-agnostic award-search workflows.",
+    longDescription:
+      "A small backend that models search requests, cached results, task deduplication, polling budgets, and month-level aggregation. It intentionally avoids scraping, hidden APIs, CAPTCHA handling, and fabricated availability data.",
+    role: "Designer and developer",
+    techStack: ["Python", "FastAPI", "SQLite", "Task Scheduling", "Caching", "Pytest"],
+    category: "Backend System",
+    status: "Public GitHub project",
+    repositoryUrl: "https://github.com/beitangshin/AwardSearch",
+    featured: false,
+    highlights: [
+      "Designed explicit cache freshness, task budgets, deduplication, and provider boundaries.",
+      "Kept the provider contract independent from the API, queue, and month-view aggregation.",
+      "Made the safety boundary explicit: authorized integrations only, never invented search results.",
+    ],
+    year: "2026",
+    overview:
+      "The project demonstrates backend design discipline more than a specific provider integration: fresh cached data is reused first, and missing results remain honestly missing.",
+    featureBullets: [
+      "Search and result models with a SQLite-backed TTL cache.",
+      "Task states, deduplication, and budget-aware scheduling.",
+      "FastAPI endpoints for month views, task enqueueing, and scheduled runs.",
+      "Manual and file-backed provider adapters for controlled test data.",
+    ],
+    architectureBullets: [
+      "FastAPI routes feed a query service and SQLite-backed cache/task queue.",
+      "Scheduler calls provider adapters through a narrow contract.",
+      "Month aggregation is independent from ingestion and provider implementation.",
+    ],
+  },
+  {
     id: "trajectory-thesis",
     title: "Published Master's Thesis: Vehicle Trajectory Prediction with Attention",
     shortDescription:
@@ -51,7 +151,7 @@ export const projectItems: ProjectItem[] = [
     highlights: [
       "Built a multi-screen fridge inventory workflow with Compose Navigation.",
       "Used Room plus Flow for reactive local data updates and inventory history.",
-      "Structured the app into data, domain, navigation, and UI layers for maintainability.",
+      "Structured the app into data, domain, navigation, and UI layers, with optional user-configured LAN synchronization.",
     ],
     year: "2026",
     heroImage: "/projects/Pic1.png",
@@ -62,6 +162,7 @@ export const projectItems: ProjectItem[] = [
       "Add, edit, search, and remove food items with quantity tracking.",
       "Record inventory transactions for stock in, stock out, and adjustments.",
       "Review fridge-level statistics and recent transaction activity.",
+      "Optionally synchronize inventory snapshots with a user-configured local agent on the same network.",
     ],
     architectureBullets: [
       "Jetpack Compose UI with screen-based navigation in AppNavGraph.",
