@@ -2,6 +2,41 @@ import type { ProjectItem } from "@/types/content";
 
 export const projectItems: ProjectItem[] = [
   {
+    id: "daily-digest-bot",
+    title: "Daily Digest Bot",
+    shortDescription:
+      "A configurable, multi-channel daily intelligence bot that fetches sources, filters a rolling time window, summarizes with DeepSeek, and publishes local HTML and Markdown digests.",
+    longDescription:
+      "Daily Digest Bot is a Python automation service for maintaining independent topic channels such as AI and autonomous driving. It supports RSS-first retrieval with an HTML fallback, source configuration, per-channel state, deduplication, DeepSeek-assisted summarization, and Raspberry Pi deployment through systemd timers and a local web server.",
+    role: "Designer and developer",
+    techStack: ["Python", "RSS / HTML Fetching", "DeepSeek API", "YAML", "Jinja2", "systemd", "Pytest"],
+    category: "Automation Bot",
+    status: "Public GitHub project",
+    repositoryUrl: "https://github.com/beitangshin/daily-digest-bot",
+    featured: true,
+    highlights: [
+      "Built isolated, configuration-driven channels with separate sources, topics, state, and output history.",
+      "Implemented rolling since-last-run filtering to avoid calendar-boundary gaps in daily collection.",
+      "Added a Raspberry Pi deployment path with a systemd timer and local HTML publishing service.",
+      "Verified the public codebase with 31 automated tests; API keys and generated digests remain local-only.",
+    ],
+    year: "2026",
+    overview:
+      "The bot turns a set of maintained sources into a dependable daily reading workflow. It prioritizes structured feeds, tracks successful runs per channel, and produces both a readable web view and traceable Markdown with source links.",
+    featureBullets: [
+      "Configure channels and sources in YAML without changing application code.",
+      "Fetch RSS/Atom feeds first and fall back to HTML discovery when necessary.",
+      "Filter against a bounded rolling window since the last successful run.",
+      "Summarize, deduplicate, and render HTML and Markdown outputs with original source links.",
+      "Deploy an always-on local instance to Raspberry Pi with scheduled runs and a LAN web view.",
+    ],
+    architectureBullets: [
+      "Channel configuration and source adapters are kept independent from orchestration.",
+      "Fetch, extraction, LLM, rendering, and state layers have focused responsibilities.",
+      "Per-channel state persists successful-run timing while generated output stays outside Git.",
+    ],
+  },
+  {
     id: "sensor-playback-visualizer",
     title: "Sensor Playback Visualizer",
     shortDescription:
