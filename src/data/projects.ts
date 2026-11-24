@@ -2,6 +2,40 @@ import type { ProjectItem } from "@/types/content";
 
 export const projectItems: ProjectItem[] = [
   {
+    id: "traton-agent-harness",
+    title: "TRATON Harness: Agent Runtime and Platform",
+    shortDescription:
+      "An engineering platform for controlled agent execution, multi-agent collaboration, model cost observability, and governed plugin expansion.",
+    longDescription:
+      "Developed the harness around a complete agent lifecycle: provider routing and usage, constrained tool execution, thread coordination, session isolation, plugin installation, and release governance. The work emphasizes explicit capability boundaries and honest reporting: estimated model costs are distinguished from provider-reported usage, while unavailable billing data is never presented as an official balance.",
+    role: "Agent platform engineer",
+    techStack: ["Agent Runtime", "LLM Providers", "Token Metering", "Plugin Security", "Multi-agent Workflows", "Testing & Governance"],
+    category: "Agentic Systems",
+    status: "Production engineering work",
+    featured: true,
+    highlights: [
+      "Defined a controlled execution boundary with harness-managed tools, thread operations, notifications, retries, and session isolation.",
+      "Added per-attempt and session-level cost snapshots, preserving the distinction between estimated and provider-reported usage.",
+      "Built a plugin installation lifecycle covering host and registry discovery, compatibility and safety checks, task submission, and error handling.",
+      "Coordinated parallel work through isolated worktrees and selective integration, with focused and full validation, privacy review, and release hygiene.",
+    ],
+    year: "2026",
+    overview:
+      "TRATON Harness is evolving from agent integrations into platform infrastructure: it gives agents useful capabilities while keeping execution, observability, extensibility, and release boundaries explicit.",
+    featureBullets: [
+      "Manage model routes, retries, token usage, and local cost estimates across attempts and sessions.",
+      "Expose dynamic tools and multi-agent coordination through a harness-controlled runtime.",
+      "Support plugin discovery and installation through compatibility and security checks.",
+      "Validate integration changes with automated suites, documentation checks, and privacy-aware release review.",
+    ],
+    architectureBullets: [
+      "Provider adapters feed usage and pricing snapshots into token and session accounting.",
+      "The harness owns tool mapping, thread lifecycle, notifications, and session isolation.",
+      "Plugin installation is gated by host, registry, compatibility, and safety checks.",
+      "Worktree isolation and selective integration keep parallel changes and release history controlled.",
+    ],
+  },
+  {
     id: "daily-digest-bot",
     title: "Daily Digest Bot",
     shortDescription:
